@@ -38,6 +38,9 @@ export class Movies {
             .filter({ hasText: movie.release_year }) //até 2024
             .click();
 
+        await this.page.locator('input[name=cover]')
+            .setInputFiles('tests/support/fixtures' + movie.cover);
+
         await this.submit()
     }
 
