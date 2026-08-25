@@ -1,13 +1,13 @@
 const { test: base, expect } = require('@playwright/test');
 
-const { LandingPage } = require('../pages/LandingPage');
-const { LoginPage } = require('../pages/LoginPage');
-const { MoviesPage } = require ('../pages/MoviesPage');
+const { Leads } = require('../pages/Leads');
+const { Login } = require('../pages/Login');
+const { Movies } = require ('../pages/Movies');
 const { Toast } = require('../pages/Components');
 
-/* landing: new LandingPage(page),
-login: new LoginPage(page),
-movies: new MoviesPage(page),
+/* landing: new Leads(page),
+login: new Login(page),
+movies: new Movies(page),
 toast: new Toast(page) */
 
 const test = base.extend({
@@ -15,9 +15,9 @@ const test = base.extend({
         
         const context = page
 
-        context['landing'] = new LandingPage(page)
-        context['login'] = new LoginPage(page)
-        context['movies'] = new MoviesPage(page)
+        context['leads'] = new Leads(page)
+        context['login'] = new Login(page)
+        context['movies'] = new Movies(page)
         context['toast'] = new Toast(page)
 
         await use(page)
