@@ -4,7 +4,7 @@ test('deve logar como administrador', async ({ page }) => {
 
     await page.login.visit();
     await page.login.submitForm('admin@zombieplus.com', 'pwd123');
-    await page.movies.isLoggedIn();
+    await page.login.isLoggedIn('Admin');
 });
 
 test('não deve logar com senha incorreta', async ({ page }) => {

@@ -6,10 +6,10 @@ export class Login {
         this.page = page
     }
 
-    async do (email, password) {
+    async do (email, password, username) {
         await this.visit()
         await this.submitForm(email,password)
-        await this.isLoggedIn()
+        await this.isLoggedIn(username)
     }
 
     async visit(){
@@ -31,8 +31,13 @@ export class Login {
         await expect(alert).toHaveText(text)
     }
 
-    async isLoggedIn() {
-        await this.page.waitForLoadState('networkidle')
-        await expect(this.page).toHaveURL(/.*admin/);
+    //async isLoggedIn() {
+    //    await this.page.waitForLoadState('networkidle')
+    //    await expect(this.page).toHaveURL(/.*admin/);
+    //}
+
+    async isLoggedIn(username) {
+        const loggedUser = this.page.locator('.logged-user')
+        await expect(loggedUser).toHaveText(`Olá, ${username}`)
     }
 }

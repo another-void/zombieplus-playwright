@@ -44,9 +44,4 @@ export class Movies {
     async alertHaveText(target){
         await expect(this.page.locator('.alert')).toHaveText(target);
     }
-
-    async isLoggedIn() {
-        await this.page.waitForLoadState('networkidle')
-        await expect(this.page).toHaveURL(/.*admin/);
-    }
 }
