@@ -7,6 +7,14 @@
     "featured": false,
     "cover": "/covers/movies/wwz.png"
   },
+  "duplicate":{
+    "title": "Resident Evil: 0 Hospedeiro",
+    "overview": "Alice se junta a sobreviventes para enfrentar a Corporação Umbrella e os zumbis que ela criou, enquanto busca respostas sobre a origem do vírus.",
+    "company": "Columbia Pictures",
+    "release_year": 2002,
+    "featured": false,
+    "cover": "/covers/movies/resident-evil.jpg"
+  },
   "exterminio": {
     "title": "Extermínio",
     "overview": "Um vírus altamente contagioso transforma a população em criaturas violentas, enquanto sobreviventes lutam para escapar do caos.",
