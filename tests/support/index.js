@@ -1,9 +1,9 @@
 const { test: base, expect } = require('@playwright/test');
 
-const { Leads } = require('../pages/Leads');
-const { Login } = require('../pages/Login');
-const { Movies } = require ('../pages/Movies');
-const { Toast } = require('../pages/Components');
+const { Leads } = require('../actions/Leads');
+const { Login } = require('../actions/Login');
+const { Movies } = require ('../actions/Movies');
+const { Toast } = require('../actions/Components');
 
 /* landing: new Leads(page),
 login: new Login(page),
