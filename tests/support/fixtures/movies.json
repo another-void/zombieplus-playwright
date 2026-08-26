@@ -39,13 +39,13 @@
     "featured": false,
     "cover": "/images/dawn-of-the-dead.png"
   },
-  "a_noite_dos_mortos_vivos": {
+  "to_remove": {
     "title": "A Noite dos Mortos-Vivos",
     "overview": "Pessoas se refugiam em uma casa isolada enquanto mortos começam a se levantar e atacar os vivos.",
-    "company": "Image Ten",
+    "company": "Universal Pictures",
     "release_year": 1968,
     "featured": false,
-    "cover": "/images/night-of-the-living-dead.png"
+    "cover": "/covers/movies/mortos-vivos.png"
   },
   "zumbilandia": {
     "title": "Zumbilândia",
